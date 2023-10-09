@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+}
+
+canvas {
+    border: 5px solid rgba(0, 0, 0, 0);
+    margin: auto;
+    margin-top: 4em;
+    position: relative;
+}
+
+#healthBar {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 20px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#healthBar .bar {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
+
+
+#bossBar {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 20px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#bossBar .bar {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(128, 0, 0);
+}
+
+.disabled {
+    display: none;
+}
